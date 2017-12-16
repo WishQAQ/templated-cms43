@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--
+                       (0 0)
+   +-------------oOO----(_)----------------+
+   |           Powered By 织梦猫           |
+   |            www.dedemao.com            |
+   |        E-mail:admin@dedemao.com       |
+   +--------------------------oOO----------+
+                      |__|__|
+                       || ||
+                      ooO Ooo
+-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link rel="stylesheet" href="/skin/css/index.css"/>
+<script type="text/javascript" src="/skin/js/jquery.min.js"></script>
+</head>
+<body>
+<!--top--start--> 
+{dede:include filename="head.htm"/} 
+<!--top--end--> 
+<!--banner--start-->
+<div class="banner"> </div>
+<!--banner--end--> 
+
+<!--service--start-->
+<div class="main">
+  <div class="index_service_tit" style="background-position:center 64px;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+      <tr>
+        <td><img src="/skin/images/index_service_tit.jpg"></td>
+      </tr>
+    </table>
+  </div>
+  <ul class="index_service_ul">
+    {dede:type typeid='2'}
+    <li style='margin-left:0px !important;'> <a href="[field:typelink/]" id="index_service_li_img_0"> <font></font> <span></span> </a> </li>
+    {/dede:type}
+    {dede:type typeid='3'}
+    <li > <a href="[field:typelink/]" id="index_service_li_img_1"> <font></font> <span></span> </a> </li>
+    {/dede:type}
+    {dede:type typeid='4'}
+    <li > <a href="[field:typelink/]" id="index_service_li_img_2"> <font></font> <span></span> </a> </li>
+    {/dede:type}
+    {dede:type typeid='5'}
+    <li > <a href="[field:typelink/]" id="index_service_li_img_3"> <font></font> <span></span> </a> </li>
+    {/dede:type}
+    {dede:type typeid='6'}
+    <li > <a href="[field:typelink/]" id="index_service_li_img_4"> <font></font> <span></span> </a> </li>
+    {/dede:type}
+    {dede:type typeid='7'}
+    <li > <a href="[field:typelink/]" id="index_service_li_img_5"> <font></font> <span></span> </a> </li>
+    {/dede:type}
+    {dede:type typeid='8'}
+    <li > <a href="[field:typelink/]" id="index_service_li_img_6"> <font></font> <span></span> </a> </li>
+    {/dede:type}
+    <div class="clear"></div>
+  </ul>
+</div>
+<!--service--end--> 
+
+<!--400--tel--start-->
+<div class="main" style="height:121px;margin:42px auto 24px auto;">
+  <div class="index_400"> <img src="/skin/images/index_400_bg.jpg"> <span>某某装饰 <font>广东省最具影响力的室内设计机构</font></span>
+    <div>全国服务热线：<b>{dede:global.cfg_tel/}</b></div>
+  </div>
+</div>
+<!--400--tel--end--> 
+
+<!--index_case-start-->
+<div class="index_case_tit"> <img src="/skin/images/index_case_tit.jpg"> </div>
+<div class="index_case_con">
+  <div class="index_case_con_menu"> {dede:channel type='son' noself='yes' typeid='9'} <a href="[field:typelink/]">[field:typename/]</a>&nbsp;&nbsp; 
+    {/dede:channel} </div>
+  {dede:arclist limit='0,1' infolen='80' typeid='9'}
+  <div class="index_case_left"> <a href="[field:arcurl/]"><img src="[field:picname/]"></a>
+    <div class="div_bg"></div>
+    <div class="div_info"> <a href="[field:arcurl/]">[field:title/]</a>
+      <p>[field:info/]...</p>
+    </div>
+  </div>
+  {/dede:arclist}
+  <ul class="index_case_right">
+    {dede:arclist limit='1,4' infolen='80' typeid='9'}
+    <li> <a href="[field:arcurl/]"><img src="[field:picname/]" width="278" height="210"></a>
+      <div class="div_bg"></div>
+      <div class="div_info"> <a href="[field:arcurl/]">[field:title/]</a>
+        <p>[field:info/]...</p>
+      </div>
+    </li>
+    {/dede:arclist}
+  </ul>
+  <div class="clear"></div>
+</div>
+<!--index_case-end-->
+<div class="main">
+  <div class="index_service_tit">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+      <tr>
+        <td>{dede:type typeid='9'}<a href="[field:typelink/]"><img src="/skin/images/index_case_more_tit.jpg"></a>{/dede:type}</td>
+      </tr>
+    </table>
+  </div>
+  <div class="index_case_tit"> <img src="/skin/images/index_tuandui_tit.jpg"> </div>
+  <ul class="index_tuandui_ul">
+    {dede:arclist infolen='60' row=4 typeid='15'}
+    <li style="margin-left:0px !important;"> <a href="[field:arcurl/]"><img src="[field:picname/]"  width="213" height="157"></a>
+      <div class="li_tuandui_div">
+        <h3><a href="[field:arcurl/]">[field:title/]</a></h3>
+        <span>集团执事董事</span>
+        <div> 行  龄：7 年 <br/>
+          行业简历：<br/>
+          [field:info/]... </div>
+        <a href="[field:arcurl/]" class="more_tuandui">点击查看+</a> </div>
+    </li>
+    {/dede:arclist}
+    <div class="clear"></div>
+  </ul>
+</div>
+
+<!--关于我们--start-->
+<div class="index_case_tit"> <img src="/skin/images/index_about_tit.jpg"> </div>
+<div class="index_com_con">
+  <div class="index_com_con_div_h3">广东某某装饰公司</div>
+  <p>{dede:myad name='jj'/}</p>
+  {dede:type typeid='27'}<a href="[field:typelink/]">查看详情+</a> {/dede:type}</div>
+<!--关于我们--end--> 
+
+<!--在施工程--start-->
+<div class="main">
+  <div class="index_service_tit" style="height:59px;background-position:center 40px;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+      <tr>
+        <td><img src="/skin/images/index_project_tit.jpg"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="index_case_con_menu" style="text-align:center;margin-bottom:0px;"> {dede:channel type='son' noself='yes' typeid='18'} <a href="[field:typelink/]">[field:typename/]</a>&nbsp;&nbsp; 
+    {/dede:channel} </div>
+  <ul class="index_project_ul" style="width:1050px;">
+    {dede:arclist row=6 titlelen=32 typeid='18' infolen='80'}
+    <li> <a href="[field:arcurl/]"><img src="[field:picname/]" width="312" height="182"></a>
+      <div> <span><a href="[field:arcurl/]">[field:title/]</a></span>
+        <p>[field:info/]...</p>
+      </div>
+    </li>
+    {/dede:arclist}
+    <div class="clear"></div>
+  </ul>
+  <div class="index_service_tit">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+      <tr>
+        <td>{dede:type typeid='18'}<a href="[field:typelink/]"><img src="/skin/images/index_project_more_tit.jpg"></a>{/dede:type}</td>
+      </tr>
+    </table>
+  </div>
+  <div class="index_case_tit" style="margin-bottom:10px;"> <img src="/skin/images/index_news_tit.jpg"> </div>
+  <ul class="index_news_ul" style="width:1046px">
+    {dede:arclist row=4 titlelen=32 typeid='22' infolen='80'}
+    <li> <a href="[field:arcurl/]"><img src="[field:picname/]"></a>
+      <div > <a href="[field:arcurl/]">[field:title/]</a>
+        <p>[field:info/]...</p>
+      </div>
+    </li>
+    {/dede:arclist}
+    <div class="clear"></div>
+  </ul>
+  <div class="index_service_tit"  style="margin-top:0px;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+      <tr>
+        <td>{dede:type typeid='22'}<a href="[field:typelink/]"><img src="/skin/images/index_news_more_tit.jpg"></a>{/dede:type}</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!--在施工程--start--> 
+
+<!--footer--start--> 
+{dede:include filename="footer.htm"/} 
+<!--footer--end-->
+</body>
+</html>

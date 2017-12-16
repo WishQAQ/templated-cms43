@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="stylesheet" href="/skin/css/index.css"/>
+<script type="text/javascript" src="/skin/js/jquery.min.js"></script>
+</head>
+<body>
+
+<!--top--start--> 
+{dede:include filename="head.htm"/} 
+<!--top--end--> 
+
+<!--list_banner--start-->
+<div class="list_banner"><img src="/skin/images/tuandui_banner.jpg" /></div>
+<!--list_banner--end--> 
+
+<!--list_content--start-->
+<div class="list_content">
+  <div class="list_content_t"  style="background: url('/skin/images/adress03.jpg') no-repeat  left center ; height:65px;">
+    <div class="l_c_t_t">当前位置：{dede:field name='position'/}</div>
+  </div>
+  <div class="list_content_d">
+    <div class="l_c_d_t">
+      <ul>
+        {dede:channel type='son' currentstyle="
+        <li><a href='~typelink~' class='case_hover'>~typename~</a></li>
+        "}
+        <li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+        {/dede:channel}
+      </ul>
+    </div>
+    <div class="clear"></div>
+    <div class="tuandui_2">
+      <ul>
+        <li><img src="/skin/images/tuandui_5.jpg" />
+          <p>清晰的了解业主的居住需求，能够用同龄人的眼光去帮他们塑造居住环境。以70后的态度，80后的精神去对待每个住宅空间。</p>
+        </li>
+        <li><img src="/skin/images/tuandui_6.jpg" />
+          <p>把商业空间做为经营的重要组成部分来看待。从环境上为销售提供重要的支持。秉承着"为业主打造聚宝盆"的理念，我们认真对待每个商业空间。</p>
+        </li>
+        <li><img src="/skin/images/tuandui_7.jpg" />
+          <p>清晰的了解业主的居住需我们把样板间、售楼处视为销售工具，利用空间的塑造居住环境。以70后的态度，80后的精神去对待每个住宅空间。</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--list_content--end-->
+
+<div class="clear"></div>
+<!--footer--start-->
+{dede:include filename="footer.htm"/}
+<!--footer--end-->
+</body>
+</html>

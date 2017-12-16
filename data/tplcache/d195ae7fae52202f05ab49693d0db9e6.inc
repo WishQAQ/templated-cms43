@@ -1,0 +1,1 @@
+<li> <a href="[field:typelink/]"> <span>[field:typename/]</span> <font>NEWS</font> <img src="/skin/images/menu_ahover.jpg"> </a> </li>
